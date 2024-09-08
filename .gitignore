@@ -1,0 +1,110 @@
+# Ignore build output directories
+bin/
+obj/
+artifacts/
+
+# Ignore user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore Mono auto-generated files
+mono_crash.*
+
+# Ignore Rider IDE files
+.idea/
+*.sln.iml
+
+# Ignore VS Code settings folder
+.vscode/
+
+# Ignore environment variables
+.env
+.env.*
+
+# Ignore ASP.NET Core temp files
+wwwroot/
+appsettings.Development.json
+
+# Ignore Azure-related files
+.azure/
+
+# Ignore npm and yarn related files
+node_modules/
+yarn.lock
+package-lock.json
+npm-debug.log*
+yarn-error.log*
+
+# Ignore Angular build outputs
+dist/
+out-tsc/
+coverage/
+
+# Ignore Angular CLI specific files
+.angular/
+.angular-cache/
+.angular.json
+browserslist
+package.json
+tsconfig.json
+tsconfig.app.json
+tsconfig.spec.json
+
+# Ignore TypeScript generated declaration files
+*.d.ts
+
+# Ignore build artifacts and other temporary files
+bower_components/
+jspm_packages/
+.DS_Store
+Thumbs.db
+.sass-cache/
+.parcel-cache/
+browserlist
+.babelrc
+.e2e/
+src/karma.conf.js
+
+# Ignore Firebase config files
+.firebase/
+firebase-debug.log
+firebase-debug-logs/
+firebase.json
+
+# Ignore compiled output and build cache
+.cache/
+tmp/
+temp/
+
+# Ignore log files
+*.log
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Visual Studio working directory settings
+.vs/
+
+# Ignore debugging and launch settings
+launchSettings.json
+launch.json
+tasks.json
+
+# Ignore compiled assemblies
+*.dll
+*.exe
+*.pdb
+
+# Ignore NuGet packages
+*.nupkg
+.nuget/
+package.lock.json
+project.lock.json
+
+# Ignore Test Results
+TestResults/
+*.trx
+*.coverage
