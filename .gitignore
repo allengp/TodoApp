@@ -26,7 +26,7 @@ mono_crash.*
 
 # Ignore ASP.NET Core temp files
 wwwroot/
-appsettings.Development.json
+#appsettings.Development.json
 
 # Ignore Azure-related files
 .azure/
@@ -84,9 +84,9 @@ temp/
 .vs/
 
 # Ignore debugging and launch settings
-launchSettings.json
-launch.json
-tasks.json
+#launchSettings.json
+#launch.json
+#tasks.json
 
 # Ignore compiled assemblies
 *.dll
@@ -103,3 +103,4 @@ project.lock.json
 TestResults/
 *.trx
 *.coverage
+/TodoApp.Server/Logs/log-20240908.txt
