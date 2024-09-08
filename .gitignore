@@ -46,12 +46,7 @@ coverage/
 # Ignore Angular CLI specific files
 .angular/
 .angular-cache/
-.angular.json
 browserslist
-package.json
-tsconfig.json
-tsconfig.app.json
-tsconfig.spec.json
 
 # Ignore TypeScript generated declaration files
 *.d.ts
