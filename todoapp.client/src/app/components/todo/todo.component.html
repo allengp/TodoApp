@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card mt-5">
+        <div class="card-header text-center">
+          <h3>{{ editMode ? 'Edit Todo' : 'Add Todo' }}</h3>
+        </div>
+        <div class="card-body">
+          <!-- Form to add or edit a todo -->
+          <form (ngSubmit)="editMode ? updateTodo() : addTodo()" #todoForm="ngForm">
+            <div class="form-group">
+              <label for="title">Todo Title</label>
+              <input type="text"
+                     id="title"
+                     class="form-control"
+                     [(ngModel)]="newTodo.title"
+                     name="title"
+                     required
+                     placeholder="Enter todo title" />
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="checkbox"
+                       [(ngModel)]="newTodo.isComplete"
+                       name="isComplete" />
+                Mark as Complete
+              </label>
+            </div>
+
+            <!-- Button to add or update a todo -->
+            <button type="submit" class="btn btn-primary btn-block">
+              {{ editMode ? 'Update Todo' : 'Add Todo' }}
+            </button>
+
+            <!-- Cancel button in edit mode -->
+            <button type="button"
+                    class="btn btn-secondary btn-block mt-2"
+                    (click)="resetForm()"
+                    *ngIf="editMode">
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Todo List Section -->
+      <div class="card mt-4">
+        <div class="card-header text-center">
+          <h3>Todo List</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let todo of todos"
+              class="list-group-item d-flex justify-content-between align-items-center">
+            <span [class.completed]="todo.isComplete">
+              {{ todo.title }} - <strong>{{ todo.isComplete ? 'Completed' : 'Pending' }}</strong>
+            </span>
+            <div>
+              <button class="btn btn-warning btn-sm mr-2" (click)="editTodo(todo)">
+                Edit
+              </button>
+              <button class="btn btn-danger btn-sm" (click)="deleteTodo(todo.id)">
+                Delete
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

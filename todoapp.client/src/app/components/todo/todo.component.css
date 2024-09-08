@@ -1,0 +1,101 @@
+/* Container Styling */
+.container {
+  max-width:100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px; /* Additional margin-top */
+}
+
+/* Card styling for a polished look */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Input and Checkbox Styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button Styling */
+.btn {
+  margin-top: 10px;
+}
+
+.btn-block {
+  width: 100%; /* Full width button */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+/* List Styling */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style for completed todos */
+.completed {
+  text-decoration: line-through;
+  color: #6c757d; /* Lighter color for completed tasks */
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Margin utility classes */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
